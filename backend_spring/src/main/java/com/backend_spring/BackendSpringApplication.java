@@ -7,7 +7,6 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-//anotacion inicio de aplicacion
 @SpringBootApplication
 public class BackendSpringApplication {
 
@@ -15,9 +14,6 @@ public class BackendSpringApplication {
 		SpringApplication.run(BackendSpringApplication.class, args);
 	}
 
-	// inicializo el rest template
-
-	// buscar (conexion)
 	@Bean
 	public RestTemplate restTemplate() {
 		return new RestTemplate();
@@ -33,5 +29,3 @@ public class BackendSpringApplication {
 		};
 	}
 }
-
-// controller -> metodo que escucha llamadas con get post put y hace sus cositas
